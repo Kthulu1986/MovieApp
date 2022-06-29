@@ -12,7 +12,7 @@ export default function Navigation(){
             //drawercontent es una funcion que retorna el objeto del navegador con sus propiedades. 
             //Por tambien va el valor props como retorno de la funcion
             drawerContent={(props) => <DrawerContent {...props}/>}> 
-            <Drawer.Screen name="app" component={StackNavigation}/>     
+            <Drawer.Screen name="app" component={StackNavigation} options={{headerShown: false}} />     
         </Drawer.Navigator>
     );
 }
